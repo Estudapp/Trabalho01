@@ -14,13 +14,14 @@ auxilia estudantes, com cronogramas de estudo com base nas matérias e horários
 Aplicativo interativo que auxilia estudantes, com cronogramas de estudo com base nas matérias e horários de sua disposição, podendo postar suas dúvidas para que outros usuários respondam, as perguntas e respostas serão avaliadas pelos usuários, ganhando ou  perdendo  pontos  para  sua  avaliação  da  tabela  de  desempenho  individual,  as  10 maiores pontuações de cada matéria estarão marcadas no Ranking. As  pessoas  que  vão  ajudar  nas  Respostas(dando  resposta  e  avaliando)  terão como deixar as matérias que queiram ajudar salvas, Ex: Quero ajudar em Matematica e historia,  ela  escolhe  essas  duas  matérias  e  tudo  que  for  referente  a  essas  matérias apareceram para ela, aí é só ir lendo e vendo em que pode ou não ajudar. As pessoas que forem fazer perguntas terão uma local onde colocaram a matéria e a sua dúvida, aí o programa fará uma busca se tem algo parecido,  se sim ele mostrará para ela tudo o que for parecido, se ela achar que ajudo pode avaliar as respostas, se não pode colocar a sua dúvida para alguem ajuda. Ranking:  todos  que  derem  respostas  serão  avaliados  pelos  os  usuários,  quanto mais avaliações boas mais alto ele vai no ranking, e assim tendo um incentivo para ajudar ao outros. <br>
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/mc.png">
+
 neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
 Sugestão: https://drive.google.com/open?id=0B6uFHreMfV7XNklGeHZzT2NvUms/<br>
 
 ![Alt text]
 ### 5.MODELO CONCEITUAL<br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/mc.png">
     a) NOTACAO ENTIDADE RELACIONAMENTO
 ![Alt text](https://drive.google.com/open?id=0B6uFHreMfV7XaVdOVm91TXBRaFk)
     
@@ -47,6 +48,7 @@ Sugestão: https://drive.google.com/open?id=0B6uFHreMfV7XNklGeHZzT2NvUms/<br>
 
 
 ### 6	MODELO LÓGICO<br>
+<img src="
 https://drive.google.com/open?id=0B6uFHreMfV7Xc2E3MDB0M25XMzg
 
 ### 7	MODELO FÍSICO<br>
