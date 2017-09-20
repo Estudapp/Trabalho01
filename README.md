@@ -17,13 +17,13 @@ Aplicativo interativo que auxilia estudantes, com cronogramas de estudo com base
 
 neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://drive.google.com/open?id=0B6uFHreMfV7XNklGeHZzT2NvUms/<br>
+Sugestão: https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 
-![Alt text]
+
 ### 5.MODELO CONCEITUAL<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/mc.png">
     a) NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://drive.google.com/open?id=0B6uFHreMfV7XaVdOVm91TXBRaFk)
+(https://drive.google.com/open?id=0B6uFHreMfV7XaVdOVm91TXBRaFk)
     
     b) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
@@ -48,8 +48,7 @@ Sugestão: https://drive.google.com/open?id=0B6uFHreMfV7XNklGeHZzT2NvUms/<br>
 
 
 ### 6	MODELO LÓGICO<br>
-<img src="
-https://drive.google.com/open?id=0B6uFHreMfV7Xc2E3MDB0M25XMzg
+<img src="https://drive.google.com/open?id=0B6uFHreMfV7Xc2E3MDB0M25XMzg">
 
 ### 7	MODELO FÍSICO<br>
 
