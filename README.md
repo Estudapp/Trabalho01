@@ -34,7 +34,7 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 #### 5.3 DESCRIÇÃO DOS DADOS 
    
 ### 6	MODELO LÓGICO<br>
-<img src="https://drive.google.com/open?id=0B6uFHreMfV7Xc2E3MDB0M25XMzg">
+<img src="https://github.com/trabpickf/Trabalho01/blob/master/ml.png">
 
 ### 7	MODELO FÍSICO<br>
 
