@@ -14,10 +14,10 @@ auxilia estudantes, com cronogramas de estudo com base nas matérias e horários
 Aplicativo interativo que auxilia estudantes, com cronogramas de estudo com base nas matérias e horários de sua disposição, podendo postar suas dúvidas para que outros usuários respondam, as perguntas e respostas serão avaliadas pelos usuários, ganhando ou  perdendo  pontos  para  sua  avaliação  da  tabela  de  desempenho  individual,  as  10 maiores pontuações de cada matéria estarão marcadas no Ranking. As  pessoas  que  vão  ajudar  nas  Respostas(dando  resposta  e  avaliando)  terão como deixar as matérias que queiram ajudar salvas, Ex: Quero ajudar em Matematica e historia,  ela  escolhe  essas  duas  matérias  e  tudo  que  for  referente  a  essas  matérias apareceram para ela, aí é só ir lendo e vendo em que pode ou não ajudar. As pessoas que forem fazer perguntas terão uma local onde colocaram a matéria e a sua dúvida, aí o programa fará uma busca se tem algo parecido,  se sim ele mostrará para ela tudo o que for parecido, se ela achar que ajudo pode avaliar as respostas, se não pode colocar a sua dúvida para alguem ajuda. Ranking:  todos  que  derem  respostas  serão  avaliados  pelos  os  usuários,  quanto mais avaliações boas mais alto ele vai no ranking, e assim tendo um incentivo para ajudar ao outros. <br>
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+<img src="">
 
-neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Sugestão: https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
+https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 
 
 ### 5.MODELO CONCEITUAL<br>
@@ -25,38 +25,79 @@ Sugestão: https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
     a) NOTACAO ENTIDADE RELACIONAMENTO
 (https://drive.google.com/open?id=0B6uFHreMfV7XaVdOVm91TXBRaFk)
     
-    b) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
+    
 
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
-    
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
-
-
+   
 ### 6	MODELO LÓGICO<br>
 <img src="https://drive.google.com/open?id=0B6uFHreMfV7Xc2E3MDB0M25XMzg">
 
 ### 7	MODELO FÍSICO<br>
 
+CREATE TABLE Cadastro_do_Usuario_Login (
+    Nome,
+    E_mail,
+    Nick PRIMARY KEY,
+    Data_de_Nascimento,
+    Sexo_,
+    Nivel_de_Escolaridade,
+    Senha,
+    N__do_celular
+);
+
+CREATE TABLE Dados_do_Desempenho (
+    Horas_Fazer_Concluidas,
+    Media_de_pontos_nas_materias,
+    Exercicios_feitos,
+    Colocacao_no_Ranking
+);
+
+CREATE TABLE Materias (
+    Conteudo,
+    Exercicios,
+    Nivel_de_dificuldade
+);
+
+CREATE TABLE Pontuacao (
+    Pontos_por_respostas,
+    Pontos_por_respostas_corretas,
+    Pontos_por_exercicios_feitos
+);
+
+CREATE TABLE Ranking (
+    Soma_de_Pontos_do_usuario,
+    Colocacao_de_cada_usuario PRIMARY KEY
+);
+
+CREATE TABLE Matricula (
+    FK_Cadastro_do_Usuario_Login_Nick
+);
+
+CREATE TABLE Desempenho__Materia (
+);
+
+CREATE TABLE Desempenho_Pontuacao (
+);
+
+CREATE TABLE Pontuacao_Ranking (
+    FK_Ranking_Colocacao_de_cada_usuario
+);
+ 
+ALTER TABLE Matricula ADD CONSTRAINT FK_Matricula_0
+    FOREIGN KEY (FK_Cadastro_do_Usuario_Login_Nick)
+    REFERENCES Cadastro_do_Usuario_Login (Nick);
+ 
+ALTER TABLE Pontuacao_Ranking ADD CONSTRAINT FK_Pontuacao_Ranking_0
+    FOREIGN KEY (FK_Ranking_Colocacao_de_cada_usuario)
+    REFERENCES Ranking (Colocacao_de_cada_usuario);
         Entrega até este ponto em (data a ser definida)
         
  
-### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-/* Lógico_BD: 
+### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br> 
 create database if not exists Cronograma;
 use Cronograma;
 
@@ -119,11 +160,6 @@ ALTER TABLE Matricula ADD CONSTRAINT FK_Matricula_0
 ALTER TABLE Pontuacao_Ranking ADD CONSTRAINT FK_Pontuacao_Ranking_0
     FOREIGN KEY (FK_Ranking_Colocacao_de_cada_usuario)
     REFERENCES Ranking (Colocacao_de_cada_usuario);
-
-
-
-
-
 
 insert into Cadastro_do_Usuario_Login (Nome, E_mail, Nick, Data_de_Nascimento, Sexo, Nivel_de_Escolaridade, Senha, N__do_celular)
 Values ('Carlos Miguel','Carmiguel@gmail.com','Carlos.M','20/10/97','M','Ensino M. Comp.','123f7908','+55(27)998672121'),
@@ -190,13 +226,7 @@ ALTER TABLE Pontuacao_Ranking ADD CONSTRAINT FK_Pontuacao_Ranking_0
         c) fontes de estudo para desenvolvimento do projeto
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
-        a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
-        b) inclusão das instruções de inserção dos dados nas referidas tabelas
-        c) inclusão das instruções para execução de outros procedimentos necessários
 
-
-        Entrega até este ponto em (data a ser definida)
-        
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
