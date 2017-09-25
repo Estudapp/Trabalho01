@@ -226,6 +226,7 @@ ALTER TABLE Pontuacao_Ranking ADD CONSTRAINT FK_Pontuacao_Ranking_0
         c) fontes de estudo para desenvolvimento do projeto
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
+<img scr="https://github.com/Estudapp/Trabalho01/blob/master/tabbd.png">
 https://drive.google.com/open?id=0B6uFHreMfV7XekZxbVRPQWpsWnM
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
