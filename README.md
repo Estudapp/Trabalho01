@@ -226,6 +226,7 @@ ALTER TABLE Pontuacao_Ranking ADD CONSTRAINT FK_Pontuacao_Ranking_0
         c) fontes de estudo para desenvolvimento do projeto
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
+https://drive.google.com/open?id=0B6uFHreMfV7XekZxbVRPQWpsWnM
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
