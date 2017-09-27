@@ -4,7 +4,8 @@ Trabalho desenvolvido durante a disciplina de BD
 # Sumário
 
 ### 1.COMPONENTES<br>
-Marcela e Ismael.<br>
+Marcela (marcelasilva.martins@hotmail.com)<br>
+Ismael (ismacaetano12@gmail.com)<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Estuapp 
