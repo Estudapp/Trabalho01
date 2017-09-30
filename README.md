@@ -4,15 +4,15 @@ Trabalho desenvolvido durante a disciplina de BD
 # Sumário
 
 ### 1.COMPONENTES<br>
-Marcela (marcelasilva.martins@hotmail.com)<br>
-Ismael (ismacaetano12@gmail.com)<br>
+Marcela Martins (marcelasilva.martins@hotmail.com)<br>
+Ismael Caetano (ismacaetano12@gmail.com)<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Estuapp 
-auxilia estudantes, com cronogramas de estudo com base nas matérias e horários de sua disposição. <br>
+Aplicativo interativo que auxilia estudantes, com cronogramas de estudo com base nas matérias e horários de sua disposição, podendo postar suas dúvidas para que outros usuários respondam e assim formar uma corrente de ajuda entre os usuários. <br>
 
 ### 3.MINI-MUNDO<br>
-Aplicativo interativo que auxilia estudantes, com cronogramas de estudo com base nas matérias e horários de sua disposição, podendo postar suas dúvidas para que outros usuários respondam, as perguntas e respostas serão avaliadas pelos usuários, ganhando ou  perdendo  pontos  para  sua  avaliação  da  tabela  de  desempenho  individual,  as  10 maiores pontuações de cada matéria estarão marcadas no Ranking. As  pessoas  que  vão  ajudar  nas  Respostas(dando  resposta  e  avaliando)  terão como deixar as matérias que queiram ajudar salvas, Ex: Quero ajudar em Matematica e historia,  ela  escolhe  essas  duas  matérias  e  tudo  que  for  referente  a  essas  matérias apareceram para ela, aí é só ir lendo e vendo em que pode ou não ajudar. As pessoas que forem fazer perguntas terão uma local onde colocaram a matéria e a sua dúvida, aí o programa fará uma busca se tem algo parecido,  se sim ele mostrará para ela tudo o que for parecido, se ela achar que ajudo pode avaliar as respostas, se não pode colocar a sua dúvida para alguem ajuda. Ranking:  todos  que  derem  respostas  serão  avaliados  pelos  os  usuários,  quanto mais avaliações boas mais alto ele vai no ranking, e assim tendo um incentivo para ajudar ao outros. <br>
+Aplicativo interativo que auxilia estudantes, com cronogramas de estudo com base nas matérias e horários de sua disposição, podendo postar suas dúvidas para que outros usuários respondam, as perguntas e respostas serão avaliadas pelos usuários, ganhando ou perdendo pontos para sua avaliação da tabela de desempenho individual, as 10 maiores pontuações de cada matéria estarão marcadas no Ranking. Os usuários que ajudarão nas Respostas (respondendo e avaliando) terão como opção deixar as matérias que queiram ajudar marcadas, Ex: “Quero ajudar em matemática e história, marcando matérias o que for referente a elas aparecerá para o usuário. Os usuários quando forem fazer perguntas terão dois locais onde colocaram a matéria e a sua dúvida, fazendo uma busca, e será mostrarado tudo o que for relacionado, ou no próprio feed. O usuário pode avaliar respostas de acordo com o nível de colaboração com seus estudos, Ranking: todos que respondem serão avaliados pelos demais usuários, quanto mais avaliações positivas mais alto ficará no ranking, e assim tendo um incentivo para ajudar aos outros usuários. <br>
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Login.png">
