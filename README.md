@@ -22,7 +22,7 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 
 
 ### 5.MODELO CONCEITUAL<br>
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/mc.png">
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20Conceitual.png">
     a) NOTACAO ENTIDADE RELACIONAMENTO
 (https://drive.google.com/open?id=0B6uFHreMfV7XaVdOVm91TXBRaFk)
     
