@@ -5,6 +5,7 @@ Trabalho desenvolvido durante a disciplina de BD
 
 ### 1.COMPONENTES<br>
 Marcela Martins (marcelasilva.martins@hotmail.com)<br>
+Ismael Caetano (ismacaetano12@gmail.com)<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Estuapp 
