@@ -65,6 +65,7 @@ https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3)  <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/like.png">
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/print%20atualiza%C3%A7ao2.png">
