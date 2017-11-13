@@ -1,0 +1,1 @@
+ALTER TABLE Usuario CHANGE Contato contato varcharacter(20);
