@@ -40,10 +40,10 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 ### 7	MODELO FÍSICO<br>
 
 CREATE 
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/Create">
+https://github.com/Estudapp/Trabalho01/blob/master/Create<br>
 
 ALTER 
- <img src="https://github.com/Estudapp/Trabalho01/blob/master/Alter">
+https://github.com/Estudapp/Trabalho01/blob/master/Alter<br>
  
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br> 
 create database if not exists Cronograma;
