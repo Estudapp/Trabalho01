@@ -15,6 +15,7 @@ CREATE TABLE Desempenho (
 );
 
 CREATE TABLE Diciplina (
+	Nome varchar(20),
     Nivel_de_Dificuldade int,
     Horas_a_dedicar int,
     Conteudo varchar(10),
@@ -27,8 +28,9 @@ CREATE TABLE Usuario (
     E_mail varchar(30),
     Nick varchar(15),
     Senha varcharacter(10),
-    Contato int(11),
-    Data_de_Nascimento int(8),
+    Contato int,
+    Sexo varchar(12),
+    Data_de_Nascimento int(10),
     Nivel_de_Escolaridade varchar (30),
     PRIMARY KEY (E_mail, Nick, Senha, Contato)
 );
@@ -43,57 +45,26 @@ CREATE TABLE Conta_Usuario_Login_Diciplina (
     FK_Usuario_E_mail varchar(30),
     FK_Usuario_Nick varchar(15) ,
     FK_Usuario_Senha varcharacter(10),
-    FK_Usuario_Contato int(10),
+    FK_Usuario_Contato int,
     FK_Login_Nick varchar(15),
     FK_Login_Senha varcharacter(10),
     FK_Diciplina_Nivel_de_Dificuldade int,
-    FK_Diciplina_Horas_a_dedicar int
+    FK_Diciplina_Horas_a_dedicar int,
+    Fk_Diciplina_Nome varchar (20)
 );
 
 CREATE TABLE Aproveitamento (
     FK_Diciplina_Nivel_de_Dificuldade int,
     FK_Diciplina_Horas_a_dedicar int,
+    Fk_Diciplina_Nome varchar (20),
     FK_Desempenho_Pontos_por_respostas int,
     FK_Desempenho_Pontos_por_exercicios_feitos int
 );
 
 CREATE TABLE Pontos (
+	Fk_Ranking_Soma_de_Pontos int,
     FK_Ranking_Colocacao_no_Ranking int,
     FK_Desempenho_Pontos_por_respostas int,
     FK_Desempenho_Pontos_por_exercicios_feitos int
 );
  
-ALTER TABLE Conta_Usuario_Login_Diciplina ADD CONSTRAINT FK_Conta_Usuario_Login_Diciplina_0
-    FOREIGN KEY (FK_Usuario_E_mail, FK_Usuario_Nick, FK_Usuario_Senha, FK_Usuario_Contato)
-    REFERENCES Usuario (E_mail, Nick, Senha, Contato)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Conta_Usuario_Login_Diciplina ADD CONSTRAINT FK_Conta_Usuario_Login_Diciplina_1
-    FOREIGN KEY (FK_Login_Nick, FK_Login_Senha)
-    REFERENCES Login (Nick, Senha)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Conta_Usuario_Login_Diciplina ADD CONSTRAINT FK_Conta_Usuario_Login_Diciplina_2
-    FOREIGN KEY (FK_Diciplina_Nivel_de_Dificuldade, FK_Diciplina_Horas_a_dedicar)
-    REFERENCES Diciplina (Nivel_de_Dificuldade, Horas_a_dedicar)
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
- 
-ALTER TABLE Aproveitamento ADD CONSTRAINT FK_Aproveitamento_0
-    FOREIGN KEY (FK_Diciplina_Nivel_de_Dificuldade, FK_Diciplina_Horas_a_dedicar)
-    REFERENCES Diciplina (Nivel_de_Dificuldade, Horas_a_dedicar)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Aproveitamento ADD CONSTRAINT FK_Aproveitamento_1
-    FOREIGN KEY (FK_Desempenho_Pontos_por_respostas, FK_Desempenho_Pontos_por_exercicios_feitos)
-    REFERENCES Desempenho (Pontos_por_respostas, Pontos_por_exercicios_feitos)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Pontos ADD CONSTRAINT FK_Pontos_0
-    FOREIGN KEY (FK_Ranking_Colocacao_no_Ranking)
-    REFERENCES Ranking (Colocacao_no_Ranking)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Pontos ADD CONSTRAINT FK_Pontos_1
-    FOREIGN KEY (FK_Desempenho_Pontos_por_respostas, FK_Desempenho_Pontos_por_exercicios_feitos)
-    REFERENCES Desempenho (Pontos_por_respostas, Pontos_por_exercicios_feitos)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
