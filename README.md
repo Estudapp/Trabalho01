@@ -46,15 +46,28 @@ ALTER<br>
 https://github.com/Estudapp/Trabalho01/blob/master/Alter<br>
  
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br> 
+INSERT <br>
+https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Tabela.png">
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 9.5 <img src="https://github.com/Estudapp/Trabalho01/blob/master/printAlter.png">
-OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
+
+
+
+
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/select.png">
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/select2.png">
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) <br>
+
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/printwher1.png">
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/printwher2.png">
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/printWhere3.png">
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3)  <br>
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
