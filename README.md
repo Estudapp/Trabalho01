@@ -38,9 +38,9 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20L%C3%B3gico.png">
 
 ### 7	MODELO FÍSICO<br>
-CREATE<br>
-https://github.com/Estudapp/Trabalho01/blob/master/Create<br>
 FÍSICO<br>
+https://github.com/Estudapp/Trabalho01/blob/master/F%C3%ADsico<br>
+CREATE<br>
 https://github.com/Estudapp/Trabalho01/blob/master/Create<br>
 ALTER<br> 
 https://github.com/Estudapp/Trabalho01/blob/master/Alter<br>
