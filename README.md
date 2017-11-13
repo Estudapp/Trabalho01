@@ -38,11 +38,11 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20L%C3%B3gico.png">
 
 ### 7	MODELO FÍSICO<br>
-CREATE<\n>
+CREATE<br>
 https://github.com/Estudapp/Trabalho01/blob/master/Create<br>
-FÍSICO<\N>
+FÍSICO<br>
 https://github.com/Estudapp/Trabalho01/blob/master/Create<br>
-ALTER<\N> 
+ALTER<br> 
 https://github.com/Estudapp/Trabalho01/blob/master/Alter<br>
  
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br> 
