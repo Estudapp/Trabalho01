@@ -1,0 +1,14 @@
+INSERT INTO Usuario(Nome, E_mail, Nick, Senha, Contato, Sexo, Data_de_Nascimento, Nivel_de_Escolaridade)
+values ('Carlos Miguel', 'carmiguel@gmail.com' , 'Carlos.M', '768767565' ,27988786701, 'Masculino', '20/10/1997', 'Ensino Medio Completo'),
+       ('Jose Noroegues', 'JoseN@gmail.com', 'Jose.N', '68866298', 27986786702, 'Masculino', '21/10/1998', 'Ensino Medio Completo'),
+	   ('Maria Miranda', 'Maria_Miranda8@yahoo.com', 'Mirandamari', '12hj9023', 22992729081,'Femenino', '12/07/98', 'Ensino M. Comp.');
+
+INSERT INTO Login(Nick, Senha)
+values ('Carlos.M', 768767565),
+('Jose.N', 68866298),
+('Mirandamari',  '12hj9023');
+
+insert into Desempenho (Pontos_por_respostas, Pontos_por_exercicios_feitos) 
+Values(6, 60),
+	    (4, 40), 
+      (7, 53);
