@@ -177,7 +177,7 @@ ALTER TABLE Pontuacao_Ranking ADD CONSTRAINT FK_Pontuacao_Ranking_0
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Tabela.png">
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
-9.5 <img src = "">
+9.5 <img src="https://github.com/Estudapp/Trabalho01/blob/master/printAlter.png">
 OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) <br>
