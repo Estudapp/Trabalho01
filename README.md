@@ -53,7 +53,6 @@ https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Tabela.png">
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
- <img src="https://github.com/Estudapp/Trabalho01/blob/master/printAlter.png">
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/select.png">
