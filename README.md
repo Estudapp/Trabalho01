@@ -39,64 +39,11 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 
 ### 7	MODELO FÍSICO<br>
 
-CREATE TABLE Cadastro_do_Usuario_Login (
-    Nome,
-    E_mail,
-    Nick PRIMARY KEY,
-    Data_de_Nascimento,
-    Sexo_,
-    Nivel_de_Escolaridade,
-    Senha,
-    N__do_celular
-);
+CREATE 
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/Create">
 
-CREATE TABLE Dados_do_Desempenho (
-    Horas_Fazer_Concluidas,
-    Media_de_pontos_nas_materias,
-    Exercicios_feitos,
-    Colocacao_no_Ranking
-);
-
-CREATE TABLE Materias (
-    Conteudo,
-    Exercicios,
-    Nivel_de_dificuldade
-);
-
-CREATE TABLE Pontuacao (
-    Pontos_por_respostas,
-    Pontos_por_respostas_corretas,
-    Pontos_por_exercicios_feitos
-);
-
-CREATE TABLE Ranking (
-    Soma_de_Pontos_do_usuario,
-    Colocacao_de_cada_usuario PRIMARY KEY
-);
-
-CREATE TABLE Matricula (
-    FK_Cadastro_do_Usuario_Login_Nick
-);
-
-CREATE TABLE Desempenho__Materia (
-);
-
-CREATE TABLE Desempenho_Pontuacao (
-);
-
-CREATE TABLE Pontuacao_Ranking (
-    FK_Ranking_Colocacao_de_cada_usuario
-);
- 
-ALTER TABLE Matricula ADD CONSTRAINT FK_Matricula_0
-    FOREIGN KEY (FK_Cadastro_do_Usuario_Login_Nick)
-    REFERENCES Cadastro_do_Usuario_Login (Nick);
- 
-ALTER TABLE Pontuacao_Ranking ADD CONSTRAINT FK_Pontuacao_Ranking_0
-    FOREIGN KEY (FK_Ranking_Colocacao_de_cada_usuario)
-    REFERENCES Ranking (Colocacao_de_cada_usuario);
-        Entrega até este ponto em (data a ser definida)
-        
+ALTER 
+ <img src="https://github.com/Estudapp/Trabalho01/blob/master/Alter">
  
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br> 
 create database if not exists Cronograma;
