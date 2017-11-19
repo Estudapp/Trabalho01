@@ -23,16 +23,6 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 
 ### 5.MODELO CONCEITUAL<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20Conceitual.png">
-    a) NOTACAO ENTIDADE RELACIONAMENTO
-
-    
-    
-
-#### 5.1 Validação do Modelo Conceitual
-
-#### 5.2 DECISÕES DE PROJETO
-
-#### 5.3 DESCRIÇÃO DOS DADOS 
    
 ### 6	MODELO LÓGICO<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20L%C3%B3gico.png">
@@ -40,8 +30,10 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 ### 7	MODELO FÍSICO<br>
 FÍSICO<br>
 https://github.com/Estudapp/Trabalho01/blob/master/F%C3%ADsico<br>
+
 CREATE<br>
 https://github.com/Estudapp/Trabalho01/blob/master/Create<br>
+
 ALTER<br> 
 https://github.com/Estudapp/Trabalho01/blob/master/Alter<br>
  
