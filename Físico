@@ -1,66 +1,48 @@
 CREATE TABLE Ranking (
-    Soma_de_Pontos,
-    Colocacao_no_Ranking,
-    PRIMARY KEY (Soma_de_Pontos, Colocacao_no_Ranking)
+    Colocacao_no_Ranking INT,
+    Id_Ranking INT PRIMARY KEY
 );
 
 CREATE TABLE Desempenho (
-    Pontos_por_respostas,
-    Pontos_por_exercicios_feitos,
-    PRIMARY KEY (Pontos_por_respostas, Pontos_por_exercicios_feitos)
+    Horas_Dedicadas INT,
+    Pontos_por_ajudar INT,
+    Pontos_por_exercicios INT,
+    Soma_de_Pontos INT,
+    Id_Desempenho INT PRIMARY KEY
 );
 
-CREATE TABLE Diciplina (
-    Nivel_de_Dificuldade,
-    Horas_a_dedicar,
-    Conteudo,
-    Exercicios,
-    Nome,
-    PRIMARY KEY (Nivel_de_Dificuldade, Horas_a_dedicar, Nome)
+CREATE TABLE Disciplina (
+    Nivel_de_Dificuldade INT,
+    Horas_a_dedicar INT,
+    Conteudo VARCHAR(400),
+    Exercicios VARCHAR(400),
+    Id_disciplina INT PRIMARY KEY,
+    Nome VARCHAR(20)
 );
 
 CREATE TABLE Usuario (
-    Nome,
-    E_mail,
-    Nick,
-    Senha,
-    Contato,
-    Data_de_Nascimento,
-    Sexo,
-    Nivel_de_Escolaridade,
-    PRIMARY KEY (E_mail, Nick, Senha, Contato)
+    Horas_livres INT,
+    Id_Usuario VARCHAR(10) PRIMARY KEY,
+    Nome VARCHAR(20),
+    Sexo VARCHAR(20),
+    Nivel_de_Escolaridade VARCHAR(30),
+    Data_de_Nascimento INT,
+    Senha INT,
+    Email VARCHAR(20)
 );
 
-CREATE TABLE Login (
-    Nick,
-    Senha,
-    PRIMARY KEY (Nick, Senha)
+CREATE TABLE Matricula (
+    FK_Disciplina_Id_disciplina INT,
+    FK_Usuario_Id_Usuario VARCHAR(10)
 );
 
-CREATE TABLE Conta_Usuario_Login_Diciplina (
-    FK_Usuario_E_mail,
-    FK_Usuario_Nick,
-    FK_Usuario_Senha,
-    FK_Usuario_Contato,
-    FK_Login_Nick,
-    FK_Login_Senha,
-    FK_Diciplina_Nivel_de_Dificuldade,
-    FK_Diciplina_Horas_a_dedicar,
-    FK_Diciplina_Nome
+CREATE TABLE Usuario_Desempenho (
+    FK_Usuario_Id_Usuario VARCHAR(10),
+    FK_Desempenho_Id_Desempenho INT
 );
 
-CREATE TABLE Aproveitamento (
-    FK_Diciplina_Nivel_de_Dificuldade,
-    FK_Diciplina_Horas_a_dedicar,
-    FK_Diciplina_Nome,
-    FK_Desempenho_Pontos_por_respostas,
-    FK_Desempenho_Pontos_por_exercicios_feitos
-);
-
-CREATE TABLE Pontos (
-    FK_Ranking_Soma_de_Pontos,
-    FK_Ranking_Colocacao_no_Ranking,
-    FK_Desempenho_Pontos_por_respostas,
-    FK_Desempenho_Pontos_por_exercicios_feitos
+CREATE TABLE Usuario_Ranking (
+    FK_Usuario_Id_Usuario VARCHAR(10),
+    FK_Ranking_Id_Ranking INT
 );
  
