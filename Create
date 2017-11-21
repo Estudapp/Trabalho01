@@ -1,70 +1,50 @@
-Create database cronograma;
-
-use cronograma;
+CREATE DATABASE Cronograma;
+USE Cronograma;
 
 CREATE TABLE Ranking (
-	Soma_de_Pontos int,
-    Colocacao_no_Ranking int, 
-    PRIMARY KEY(Soma_de_Pontos, Colocacao_no_Ranking)
+    Colocacao_no_Ranking INT,
+    Id_Ranking INT PRIMARY KEY
 );
 
 CREATE TABLE Desempenho (
-    Pontos_por_respostas int,
-    Pontos_por_exercicios_feitos int,
-    PRIMARY KEY (Pontos_por_respostas, Pontos_por_exercicios_feitos)
+    Horas_Dedicadas INT,
+    Pontos_por_ajudar INT,
+    Pontos_por_exercicios INT,
+    Soma_de_Pontos INT,
+    Id_Desempenho INT PRIMARY KEY
 );
 
-CREATE TABLE Diciplina (
-	Nome varchar(20),
-    Nivel_de_Dificuldade int,
-    Horas_a_dedicar int,
-    Conteudo varchar(10),
-    Exercicios varchar(100),
-    PRIMARY KEY (Nivel_de_Dificuldade, Horas_a_dedicar)
+CREATE TABLE Disciplina (
+    Nivel_de_Dificuldade INT,
+    Horas_a_dedicar INT,
+    Conteudo VARCHAR(400),
+    Exercicios VARCHAR(400),
+    Id_disciplina INT PRIMARY KEY,
+    Nome VARCHAR(20)
 );
 
 CREATE TABLE Usuario (
-    Nome varchar(20),
-    E_mail varchar(30),
-    Nick varchar(15),
-    Senha varcharacter(10),
-    Contato int,
-    Sexo varchar(12),
-    Data_de_Nascimento int(10),
-    Nivel_de_Escolaridade varchar (30),
-    PRIMARY KEY (E_mail, Nick, Senha, Contato)
+    Horas_livres INT,
+    Id_Usuario VARCHAR(10) PRIMARY KEY,
+    Nome VARCHAR(20),
+    Sexo VARCHAR(20),
+    Nivel_de_Escolaridade VARCHAR(30),
+    Data_de_Nascimento INT,
+    Senha INT,
+    Email VARCHAR(20)
 );
 
-CREATE TABLE Login (
-    Nick varchar(15),
-    Senha varcharacter(10),
-    PRIMARY KEY (Nick, Senha)
+CREATE TABLE Matricula (
+    FK_Disciplina_Id_disciplina INT,
+    FK_Usuario_Id_Usuario VARCHAR(10)
 );
 
-CREATE TABLE Conta_Usuario_Login_Diciplina (
-    FK_Usuario_E_mail varchar(30),
-    FK_Usuario_Nick varchar(15) ,
-    FK_Usuario_Senha varcharacter(10),
-    FK_Usuario_Contato int,
-    FK_Login_Nick varchar(15),
-    FK_Login_Senha varcharacter(10),
-    FK_Diciplina_Nivel_de_Dificuldade int,
-    FK_Diciplina_Horas_a_dedicar int,
-    Fk_Diciplina_Nome varchar (20)
+CREATE TABLE Usuario_Desempenho (
+    FK_Usuario_Id_Usuario VARCHAR(10),
+    FK_Desempenho_Id_Desempenho INT
 );
 
-CREATE TABLE Aproveitamento (
-    FK_Diciplina_Nivel_de_Dificuldade int,
-    FK_Diciplina_Horas_a_dedicar int,
-    Fk_Diciplina_Nome varchar (20),
-    FK_Desempenho_Pontos_por_respostas int,
-    FK_Desempenho_Pontos_por_exercicios_feitos int
+CREATE TABLE Usuario_Ranking (
+    FK_Usuario_Id_Usuario VARCHAR(10),
+    FK_Ranking_Id_Ranking INT
 );
-
-CREATE TABLE Pontos (
-	Fk_Ranking_Soma_de_Pontos int,
-    FK_Ranking_Colocacao_no_Ranking int,
-    FK_Desempenho_Pontos_por_respostas int,
-    FK_Desempenho_Pontos_por_exercicios_feitos int
-);
- 
