@@ -25,7 +25,7 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 <img src="httpshttps://github.com/Estudapp/Trabalho01/blob/master/printconceitual.png">
    
 ### 6	MODELO LÓGICO<br>
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20L%C3%B3gico.png">
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/printlogico.png">
 
 ### 7	MODELO FÍSICO<br>
 FÍSICO<br>
