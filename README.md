@@ -73,6 +73,7 @@ https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 #### 9.9	CONSULTAS COM SELF JOIN (todas) E VIEW (mais importantes) <br>
 #### 9.10	SUBCONSULTAS (Mínimo 3) <br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
+https://github.com/Estudapp/Trabalho01/blob/master/slidBD.odp<br>
 ### 11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 
         Entrega até este ponto em (data a ser definida)
