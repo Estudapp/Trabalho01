@@ -75,6 +75,7 @@ https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
 https://github.com/Estudapp/Trabalho01/blob/master/slidBD.odp<br>
 ### 11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
+Desenvolver corretamente o modelo conceitual.<br>
 
         Entrega até este ponto em (data a ser definida)
         
