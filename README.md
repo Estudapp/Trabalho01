@@ -59,12 +59,9 @@ https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3)  <br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/like.png">
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/print%20atualiza%C3%A7ao2.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/print%20atualiza%C3%A7ao3.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/print%20atualiza%C3%A7ao4.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/print%20atualiza%C3%A7ao5.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/printAlter.png">
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/printAlter1.png">
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/printAlter2.png">
+<img src="">
 #### 9.6	CONSULTAS COM JUNÇÃO (Todas Junções)<br>
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
         Entrega até este ponto em (data a ser definida)
