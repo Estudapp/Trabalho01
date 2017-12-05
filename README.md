@@ -46,9 +46,9 @@ https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/busca.png">
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/busca2.png">
 
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/select.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/select2.png">
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) <br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/selectWhere1.png">
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/printwher1.png">
