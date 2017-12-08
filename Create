@@ -1,50 +1,80 @@
-CREATE DATABASE Cronograma;
-USE Cronograma;
+create database Estudapp;
+use Estudapp;
 
-CREATE TABLE Ranking (
-    Colocacao_no_Ranking INT,
-    Id_Ranking INT PRIMARY KEY
-);
 
-CREATE TABLE Desempenho (
-    Horas_Dedicadas INT,
-    Pontos_por_ajudar INT,
-    Pontos_por_exercicios INT,
-    Soma_de_Pontos INT,
-    Id_Desempenho INT PRIMARY KEY
+CREATE TABLE Usuario (
+    Nome varchar(40),
+    Email varchar(50),
+    Email_de_recuperacao varchar(50),
+    Nivel_de_Escolaridade varchar(50),
+    Data_de_nascimento varchar(12),
+    Horas_livres int,
+    Qtd_Ajuda int,
+    Id_Usuario int PRIMARY KEY,
+    Colocacao_no_Ranking int
 );
 
 CREATE TABLE Disciplina (
-    Nivel_de_Dificuldade INT,
-    Horas_a_dedicar INT,
-    Conteudo VARCHAR(400),
-    Exercicios VARCHAR(400),
-    Id_disciplina INT PRIMARY KEY,
-    Nome VARCHAR(20)
+    Nome varchar(40),
+    Conteudo varchar(4000),
+    Exercicios varchar(4000),
+    Id_Disciplina int PRIMARY KEY,
+    Horas_a_dedicar int,
+    Nivel_de_Dificuldade int
 );
 
-CREATE TABLE Usuario (
-    Horas_livres INT,
-    Id_Usuario VARCHAR(10) PRIMARY KEY,
-    Nome VARCHAR(20),
-    Sexo VARCHAR(20),
-    Nivel_de_Escolaridade VARCHAR(30),
-    Data_de_Nascimento INT,
-    Senha INT,
-    Email VARCHAR(20)
+CREATE TABLE Ranking (
+    Id_Ranking int PRIMARY KEY,
+    Colocacoes int
+);
+
+CREATE TABLE Desenpenho (
+    Id_Desempenho int PRIMARY KEY,
+    Horas_dedicadas int,
+    Qtd_Exercicios_Feitos int
 );
 
 CREATE TABLE Matricula (
-    FK_Disciplina_Id_disciplina INT,
-    FK_Usuario_Id_Usuario VARCHAR(10)
+    FK_Usuario_Id_Usuario int,
+    FK_Disciplina_Id_Disciplina int
 );
 
-CREATE TABLE Usuario_Desempenho (
-    FK_Usuario_Id_Usuario VARCHAR(10),
-    FK_Desempenho_Id_Desempenho INT
+CREATE TABLE Desenpenho_Usuario (
+    FK_Usuario_Id_Usuario int,
+    FK_Desenpenho_Id_Desempenho int
 );
 
 CREATE TABLE Usuario_Ranking (
-    FK_Usuario_Id_Usuario VARCHAR(10),
-    FK_Ranking_Id_Ranking INT
+    FK_Usuario_Id_Usuario int,
+    FK_Ranking_Id_Ranking int
 );
+ 
+ALTER TABLE Matricula ADD CONSTRAINT FK_Matricula_0
+    FOREIGN KEY (FK_Usuario_Id_Usuario)
+    REFERENCES Usuario (Id_Usuario)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE Matricula ADD CONSTRAINT FK_Matricula_1
+    FOREIGN KEY (FK_Disciplina_Id_Disciplina)
+    REFERENCES Disciplina (Id_Disciplina)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE Desenpenho_Usuario ADD CONSTRAINT FK_Desenpenho_Usuario_0
+    FOREIGN KEY (FK_Usuario_Id_Usuario)
+    REFERENCES Usuario (Id_Usuario)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE Desenpenho_Usuario ADD CONSTRAINT FK_Desenpenho_Usuario_1
+    FOREIGN KEY (FK_Desenpenho_Id_Desempenho)
+    REFERENCES Desenpenho (Id_Desempenho)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE Usuario_Ranking ADD CONSTRAINT FK_Usuario_Ranking_0
+    FOREIGN KEY (FK_Usuario_Id_Usuario)
+    REFERENCES Usuario (Id_Usuario)
+    ON DELETE SET NULL ON UPDATE CASCADE;
+ 
+ALTER TABLE Usuario_Ranking ADD CONSTRAINT FK_Usuario_Ranking_1
+    FOREIGN KEY (FK_Ranking_Id_Ranking)
+    REFERENCES Ranking (Id_Ranking)
+    ON DELETE SET NULL ON UPDATE CASCADE;
