@@ -23,7 +23,8 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 
 ### 5.MODELO CONCEITUAL<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20Conceitual.png">
-   
+   5.1 Descrição.
+      https://github.com/Estudapp/Trabalho01/blob/master/Descri%C3%A7%C3%A3o.pdf<br>
 ### 6	MODELO LÓGICO<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20L%C3%B3gico.png">
 
