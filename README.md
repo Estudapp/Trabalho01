@@ -95,7 +95,7 @@ SELECT usuario.Nome, ranking.Colocacoes as Colocação from usuario_ranking inne
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
 <img src="">
 <img src="">
-<img src="">
+
         Entrega até este ponto em (data a ser definida)
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
@@ -110,6 +110,9 @@ SELECT ranking.Colocacoes as Colocação from usuario_ranking left outer join ra
 
 
 #### 9.9	CONSULTAS COM SELF JOIN (todas) E VIEW (mais importantes) <br>
+create view ranking_mais_velhos as select usuario.Nome, usuario.Email, usuario.Data_de_nascimento as Nascimento from usuario order by usuario.Data_de_nascimento; <br>
+select * from ranking_mais_velhos; <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/view.PNG">
 
 #### 9.10	SUBCONSULTAS (Mínimo 3) <br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
