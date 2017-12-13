@@ -1,9 +1,8 @@
-create database Estudapp;
+CREATE database Estudapp;
 use Estudapp;
 
-
 CREATE TABLE Usuario (
-    Nome varchar(40),
+    Sexo varchar(12),
     Email varchar(50),
     Email_de_recuperacao varchar(50),
     Nivel_de_Escolaridade varchar(50),
@@ -11,7 +10,9 @@ CREATE TABLE Usuario (
     Horas_livres int,
     Qtd_Ajuda int,
     Id_Usuario int PRIMARY KEY,
-    Colocacao_no_Ranking int
+    Colocacao_no_Ranking int,
+    Senha varchar(8),
+    Nome varchar(40)
 );
 
 CREATE TABLE Disciplina (
@@ -40,8 +41,8 @@ CREATE TABLE Matricula (
 );
 
 CREATE TABLE Desenpenho_Usuario (
-    FK_Usuario_Id_Usuario int,
-    FK_Desenpenho_Id_Desempenho int
+    FK_Desenpenho_Id_Desempenho int,
+    FK_Usuario_Id_Usuario int
 );
 
 CREATE TABLE Usuario_Ranking (
@@ -60,13 +61,13 @@ ALTER TABLE Matricula ADD CONSTRAINT FK_Matricula_1
     ON DELETE RESTRICT ON UPDATE RESTRICT;
  
 ALTER TABLE Desenpenho_Usuario ADD CONSTRAINT FK_Desenpenho_Usuario_0
-    FOREIGN KEY (FK_Usuario_Id_Usuario)
-    REFERENCES Usuario (Id_Usuario)
+    FOREIGN KEY (FK_Desenpenho_Id_Desempenho)
+    REFERENCES Desenpenho (Id_Desempenho)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
  
 ALTER TABLE Desenpenho_Usuario ADD CONSTRAINT FK_Desenpenho_Usuario_1
-    FOREIGN KEY (FK_Desenpenho_Id_Desempenho)
-    REFERENCES Desenpenho (Id_Desempenho)
+    FOREIGN KEY (FK_Usuario_Id_Usuario)
+    REFERENCES Usuario (Id_Usuario)
     ON DELETE RESTRICT ON UPDATE RESTRICT;
  
 ALTER TABLE Usuario_Ranking ADD CONSTRAINT FK_Usuario_Ranking_0
