@@ -99,7 +99,18 @@ SELECT usuario.Nome, ranking.Colocacoes as Colocação from usuario_ranking inne
         Entrega até este ponto em (data a ser definida)
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
+SELECT Nome,Email,Sexo from matricula right outer join usuario on usuario.Id_usuario=matricula.FK_Usuario_Id_Usuario; <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/right.PNG">
+SELECT Nome,conteudo from matricula right outer join Disciplina on disciplina.Id_Disciplina=matricula.FK_Disciplina_Id_Disciplina;<br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/right2.PNG">
+
+SELECT ranking.Colocacoes as Colocação from usuario_ranking left outer join ranking on ranking.Id_Ranking= usuario_ranking.FK_Ranking_Id_Ranking;<br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/left3.PNG">
+
+
+
 #### 9.9	CONSULTAS COM SELF JOIN (todas) E VIEW (mais importantes) <br>
+
 #### 9.10	SUBCONSULTAS (Mínimo 3) <br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
 https://github.com/Estudapp/Trabalho01/blob/master/slidBDAA.pdf<br>
