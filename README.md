@@ -46,7 +46,8 @@ https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 
 select * from Usuario;<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/bsca1.png">
-<img src="">
+select * from disciplina;<br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/bsca2.png">
 <img src="">
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) <br>
