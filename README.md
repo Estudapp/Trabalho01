@@ -71,7 +71,7 @@ select * from Desenpenho where Qtd_Exercicios_feitos>50; <br>
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
-select * from Ranking where colocacoes > 6;
+select * from Ranking where colocacoes > 6;<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/L1.png">
 
 <img src="">
