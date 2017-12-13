@@ -31,14 +31,16 @@ https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
 CREATE<br>
 https://github.com/Estudapp/Trabalho01/blob/master/Create<br>
 
+CREATE E INSERT<br> 
+https://github.com/Estudapp/Trabalho01/blob/master/Create%20e%20Insert
  
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br> 
 INSERT <br>
 https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/Tabela.png">
-
+Tabela <br>
+https://github.com/Estudapp/Trabalho01/blob/master/planilhaBD.pdf
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
