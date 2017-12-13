@@ -71,17 +71,29 @@ select * from Desenpenho where Qtd_Exercicios_feitos>50; <br>
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
+select * from Ranking where colocacoes > 6;
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/L1.png">
 
+<img src="">
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3)  <br>
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/like1.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/like2.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/like3.png">
+<img src="">
+<img src="">
+<img src="">
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/printAlter1.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/printAlter2.png">
+<img src="">
+<img src="">
 <img src="">
 #### 9.6	CONSULTAS COM JUNÇÃO (Todas Junções)<br>
+
+<img src="">
+<img src="">
+<img src="">
+
+
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
+<img src="">
+<img src="">
+<img src="">
         Entrega até este ponto em (data a ser definida)
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
