@@ -1,14 +1,40 @@
-INSERT INTO Usuario(Nome, E_mail, Nick, Senha, Contato, Sexo, Data_de_Nascimento, Nivel_de_Escolaridade)
-values ('Carlos Miguel', 'carmiguel@gmail.com' , 'Carlos.M', '768767565' ,27988786701, 'Masculino', '20/10/1997', 'Ensino Medio Completo'),
-       ('Jose Noroegues', 'JoseN@gmail.com', 'Jose.N', '68866298', 27986786702, 'Masculino', '21/10/1998', 'Ensino Medio Completo'),
-	   ('Maria Miranda', 'Maria_Miranda8@yahoo.com', 'Mirandamari', '12hj9023', 22992729081,'Femenino', '12/07/98', 'Ensino M. Comp.');
+INSERT INTO Usuario (Sexo,Email,Email_de_recuperacao,Nivel_de_Escolaridade,Data_de_nascimento,Horas_livres,Qtd_Ajuda,Id_Usuario,Colocacao_no_Ranking,Senha,Nome)
+values ('Masculino','JoseN@gmail.com','JoN@gmail.com','Ensino Medio Completo','1998/10/21',4,7,3030,6, 68866298,'Jose Noroegues'),
+	('Masculino','carmiguel@gmail.com', 'cmiguel@hotmail.com' ,'Ensino Medio Completo','1997/10/20', 2, 6, 2020,9, 76876756,'Carlos Miguel'),
+	('Feminino','Maria_Mira8@yahoo.com','Mira8@hotmail.com.com','Ensino Superior Completo','1989/12/07',3,8, 1010,7, 12099023,'Maria Miranda' );
 
-INSERT INTO Login(Nick, Senha)
-values ('Carlos.M', 768767565),
-('Jose.N', 68866298),
-('Mirandamari',  '12hj9023');
 
-insert into Desempenho (Pontos_por_respostas, Pontos_por_exercicios_feitos) 
-Values(6, 60),
-	    (4, 40), 
-      (7, 53);
+
+INSERT INTO Disciplina (Nome,Conteudo,Exercicios,Id_Disciplina,Horas_a_dedicar,Nivel_de_Dificuldade)
+values ('Matemática','Funções Trigonometricas','Funções Trigonometricas',10,3,3),
+       ('Portugues','Orações Subordinadas','Orações Subordinadas',20,2,1),
+       ('Filosofia','História da Filosofia','História da Filosofia',30,4,2);
+
+
+INSERT INTO Matricula (FK_Disciplina_Id_disciplina,FK_Usuario_Id_Usuario)   
+values	(20, 2020),
+	(30, 1010),
+	(10,3030); 
+
+
+INSERT INTO desenpenho (Id_Desempenho,Horas_dedicadas,Qtd_Exercicios_Feitos)
+values (6060,3,50),
+	(7070,4,55),
+        (2525,2,60);
+             
+             
+INSERT INTO Ranking (Id_Ranking,Colocacoes)
+values (44,5),
+       (33,10),   
+       (55,8); 
+       
+       
+INSERT INTO desenpenho_usuario (FK_Usuario_Id_Usuario,FK_Desenpenho_Id_Desempenho)
+values	(2020,6060),
+	(3030,7070),
+        (1010,2525);
+	
+INSERT INTO usuario_ranking (FK_Usuario_Id_Usuario,FK_Ranking_Id_Ranking)
+values	(2020,44),
+	(3030,55),
+        (1010,33); 
