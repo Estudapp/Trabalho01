@@ -60,9 +60,14 @@ select * from Ranking;<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/bsca5.png">
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) <br>
-<img src="">
-<img src="">
-<img src="">
+select * from Ranking where Id_ranking = 55; <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/wh1.png">
+
+select Nome, Email from Usuario where name = 'José Noroegues'; <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/wh2.png">
+
+select * from Desenpenho where Qtd_Exercicios_feitos>50; <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/wh3.png">
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
