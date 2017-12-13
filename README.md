@@ -17,9 +17,7 @@ Aplicativo interativo que auxilia estudantes, com cronogramas de estudo com base
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Login.png">
 
-
 https://drive.google.com/open?id=0B6uFHreMfV7XVlJsR3I1RUZQNFE<br>
-
 
 ### 5.MODELO CONCEITUAL<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/Modelo%20Conceitual.png">
@@ -71,18 +69,13 @@ select * from Desenpenho where Qtd_Exercicios_feitos>50; <br>
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
-select * from Ranking where colocacoes > 6;<br>
+select * from Ranking where colocacoes >6;<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/L1.png">
 
-<img src="">
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3)  <br>
-<img src="">
-<img src="">
-<img src="">
+
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-<img src="">
-<img src="">
-<img src="">
+
 #### 9.6	CONSULTAS COM JUNÇÃO (Todas Junções)<br>
 SELECT usuario.Nome as NomeDisciplina from matricula inner join usuario on usuario.Id_Usuario=FK_Usuario_Id_Usuario;<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/innJ1.PNG">
@@ -93,9 +86,6 @@ SELECT usuario.Nome, ranking.Colocacoes as Colocação from usuario_ranking inne
 
 
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
-<img src="">
-<img src="">
-
         Entrega até este ponto em (data a ser definida)
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
@@ -115,6 +105,9 @@ select * from ranking_mais_velhos; <br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/view.PNG">
 
 #### 9.10	SUBCONSULTAS (Mínimo 3) <br>
+select * from disciplina where Nome in (select Nome from disciplina where Nome like "M%"); <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/subconsulta.PNG">
+
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
 https://github.com/Estudapp/Trabalho01/blob/master/slidBDAA.pdf<br>
 ### 11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
