@@ -46,16 +46,23 @@ https://github.com/Estudapp/Trabalho01/blob/master/Insert<br>
 
 select * from Usuario;<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/bsca1.png">
+
 select * from disciplina;<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/bsca2.png">
+
 select * from Matricula;<br>
 <img src="https://github.com/Estudapp/Trabalho01/blob/master/bsca3.png">
 
+select * from desenpenho;<br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/bsca4.png">
+
+select * from Ranking;<br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/bsca5.png">
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) <br>
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/selectWhere1.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/printwher1.png">
-<img src="https://github.com/Estudapp/Trabalho01/blob/master/selectWhere3.png">
+<img src="">
+<img src="">
+<img src="">
 
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
