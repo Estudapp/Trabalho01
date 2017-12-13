@@ -132,3 +132,7 @@ inner join disciplina on disciplina.Id_Disciplina=matricula.FK_Disciplina_Id_Dis
 
 SELECT usuario.Nome, Horas_dedicadas, Qtd_Exercicios_Feitos from desenpenho_usuario inner join usuario on usuario.Id_Usuario = desenpenho_usuario.FK_Usuario_Id_Usuario
 inner join desenpenho on desenpenho.Id_Desempenho = desenpenho_usuario.FK_Desenpenho_Id_Desempenho;
+
+SELECT usuario.Nome, ranking.Colocacoes as Colocação from usuario_ranking inner join usuario on usuario.Id_Usuario = usuario_ranking.FK_Usuario_Id_Usuario
+inner join ranking on ranking.Id_Ranking = usuario_ranking.FK_Ranking_Id_Ranking;
+
