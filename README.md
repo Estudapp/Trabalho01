@@ -84,10 +84,12 @@ select * from Ranking where colocacoes > 6;<br>
 <img src="">
 <img src="">
 #### 9.6	CONSULTAS COM JUNÇÃO (Todas Junções)<br>
-
-<img src="">
-<img src="">
-<img src="">
+SELECT usuario.Nome as NomeDisciplina from matricula inner join usuario on usuario.Id_Usuario=FK_Usuario_Id_Usuario;<br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/innJ1.PNG">
+SELECT usuario.Nome from desenpenho_usuario inner join usuario on usuario.Id_Usuario = desenpenho_usuario.FK_Usuario_Id_Usuario;<br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/innn.PNG">
+SELECT usuario.Nome, ranking.Colocacoes as Colocação from usuario_ranking inner join usuario on usuario.Id_Usuario = usuario_ranking.FK_Usuario_Id_Usuario inner join ranking on ranking.Id_Ranking = usuario_ranking.FK_Ranking_Id_Ranking; <br>
+<img src="https://github.com/Estudapp/Trabalho01/blob/master/innJ3.PNG">
 
 
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
